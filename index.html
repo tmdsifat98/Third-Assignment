@@ -27,21 +27,22 @@
             }
         }
       </style>
-      <script>
+    <script>
         tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          primary:'#179800',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#179800',
+                        secondary: '#EFEBE3',
+                    }
+                }
+            }
         }
-      }
-    }
-  }
-      </script>
+    </script>
 </head>
 
 <body class="font-sora">
-    <header class="container mx-auto">
+    <header class="container mx-auto mb-10">
         <!-- Nav Section -->
         <nav class="px-2 py-2 md:px-6 border-[1px] md:border-none border-b-primary mb-10">
             <div class="navbar relative">
@@ -92,14 +93,52 @@
         </nav>
         <!-- Hero section starts here -->
         <section class=" bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
-            <div class="w-3/5 mx-auto">
-                <h1 class="text-6xl font-semibold text-center mb-7">Freshness <span class="text-primary">You Can <br> Count</span> On, Prices You’ll Love!</h1>
-                <p class="text-gray-600 text-center w-4/5 mx-auto">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
-                <img class="mx-auto animate-bounce w-3/4" src="assets/hero-vegetables.png" alt="">
+            <div class="md:w-3/5 mx-auto px-2 md:px-0">
+                <h1 class="text-4xl md:text-6xl font-semibold text-center mb-7">Freshness <span class="text-primary">You
+                        Can <br> Count</span> On, Prices You’ll Love!</h1>
+                <p class="text-gray-600 text-center md:w-4/5 mx-auto mb-7">Shop your daily essentials at unbeatable
+                    prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+                <img class="mx-auto animate-bounce md:w-3/4" src="assets/hero-vegetables.png" alt="">
             </div>
         </section>
     </header>
-    <main>
+    <main class="container mx-auto my-10">
+        <!-- Services section -->
+        <section class="w-full px-5 md:px-0 md:w-3/4 mx-auto">
+            <h2 class="text-4xl font-bold mb-7 text-primary">Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-3">
+                <!-- 24/7 card -->
+                <div class="card bg-secondary">
+                    <figure class=" mx-auto mb-2 mt-7 bg-white rounded-full p-5">
+                        <img src="assets/service.png" alt="">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-bold mb-5">24/7 Services</h2>
+                        <p class="text-gray-600">We are here for your any types of query with 24 hours and 7 days. Just contact us and ask your questions.</p>
+                    </div>
+                </div>
+                <!-- Fast Delivery Card -->
+                <div class="card bg-secondary">
+                    <figure class=" mx-auto mb-2 mt-7 bg-white rounded-full p-5">
+                        <img src="assets/delivery.png" alt="">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-bold mb-5">Fast Delivery</h2>
+                        <p class="text-gray-600">We ensure fast delivery! Your order will reach you on time. Order now! Guaranteed fast delivery!</p>
+                    </div>
+                </div>
+                <!-- Healthy Product Card -->
+                <div class="card bg-secondary">
+                    <figure class=" mx-auto mb-2 mt-7 bg-white rounded-full p-5">
+                        <img src="assets/healthy.png" alt="">
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-bold mb-5">Healthy Products </h2>
+                        <p class="text-gray-600">100% healthy and safe! Our products are made with high-quality ingredients and no harmful additives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
