@@ -19,9 +19,6 @@
     <!-- Custom taiwind css codes -->
     <style type="text/tailwindcss">
         @layer utilities {
-            .text-primary{
-                color: #179800;
-            }
             .font-poppins{
                 font-family: poppins, serif;
             }
@@ -30,12 +27,23 @@
             }
         }
       </style>
+      <script>
+        tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary:'#179800',
+        }
+      }
+    }
+  }
+      </script>
 </head>
 
 <body class="font-sora">
-    <header>
+    <header class="container mx-auto">
         <!-- Nav Section -->
-        <nav class="px-2 py-2 md:px-6">
+        <nav class="px-2 py-2 md:px-6 border-[1px] md:border-none border-b-primary mb-10">
             <div class="navbar relative">
                 <div class="w-full flex flex-row-reverse flex-1 justify-between">
                     <!-- Dropdown Part -->
@@ -52,9 +60,9 @@
                                     <li><a>Contact us</a></li>
                                 </div>
                                 <button
-                                    class="btn border-[1px] border-[#179800] bg-transparent px-2 py-1 text-black normal-case text-xl">Login</button>
+                                    class="btn border-[1px] border-primary bg-transparent px-2 py-1 text-black normal-case text-xl">Login</button>
                                 <button
-                                    class="btn bg-[#179800] text-white normal-case text-xl py-1 px-2 border border-[#179800]">Register</button>
+                                    class="btn bg-primary text-white normal-case text-xl py-1 px-2 border border-primary">Register</button>
                             </ul>
                         </div>
                     </div>
@@ -82,6 +90,14 @@
                 </div>
             </div>
         </nav>
+        <!-- Hero section starts here -->
+        <section class=" bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
+            <div class="w-3/5 mx-auto">
+                <h1 class="text-6xl font-semibold text-center mb-7">Freshness <span class="text-primary">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+                <p class="text-gray-600 text-center w-4/5 mx-auto">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+                <img class="mx-auto animate-bounce w-3/4" src="assets/hero-vegetables.png" alt="">
+            </div>
+        </section>
     </header>
     <main>
     </main>
